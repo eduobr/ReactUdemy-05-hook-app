@@ -1,7 +1,6 @@
 import React from "react";
 import "../02-useEffect/effects.css";
-import { useFetch } from "../../hooks/useFetch";
-import { useCounter } from "../../hooks/useCounter";
+import { useCounter,useFetch } from "../../hooks";
 
 export const MultipleCustomHooks = () => {
   const { counter, increment } = useCounter(1);
@@ -22,6 +21,7 @@ export const MultipleCustomHooks = () => {
     <div>
       <h1>BreakingBad Quotes</h1>
       <hr />
+      {/* Para optimizar el siguiente código, podemos crear un componente para cada caso */}
       {loading ? (
         <div className="alert alert-info text-center">Loading...</div>
       ) : (
