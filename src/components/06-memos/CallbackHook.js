@@ -11,7 +11,7 @@ export const CallbackHook = () => {
 
   const increment = useCallback((num) => {
     setCounter(c => c + num);
-  }, [setCounter]);
+  }, []);
 
   return (
     <div>
